@@ -781,7 +781,7 @@ a {
 }
 
 .footer .inner .right img{
-    width: 150px;
+    width: 180px;
     height: auto;
 }
 
@@ -799,7 +799,7 @@ a {
 .footer .inner .right .fin h2{
     font-size: 50px;
     font-family: 'Montserrat';
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .footer .inner .right .fin span{
