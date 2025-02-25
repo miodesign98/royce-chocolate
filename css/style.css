@@ -1,0 +1,807 @@
+@font-face {
+    font-family: 'Paperlogy 8';
+    src: url('font/paperlogy/Paperlogy-8ExtraBold.woff2') format('woff2'),
+        url('font/paperlogy/Paperlogy-8ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-display: swap;
+    src: local('Pretendard Light'), url('font/pretendard/Pretendard-Light.woff2') format('woff2'), url('font/pretendard/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-display: swap;
+    src: local('Pretendard Bold'), url('font/pretendard/Pretendard-Bold.woff2') format('woff2'), url('font/pretendard/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/montserrat/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('font/montserrat/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+        url('font/montserrat/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header */
+.header {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header .inner {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .inner .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.header .inner .nav .logo {
+    width: 158px;
+}
+
+.header .inner .nav .logo img {
+    width: 100%;
+    height: 28px;
+}
+
+.header .inner .nav .gnb {
+    display: flex;
+    gap: 50px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.header .inner .util {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .inner .util .search {
+    position: relative;
+}
+
+.header .inner .util .search input {
+    width: 180px;
+    height: 28px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.header .inner .util .search img {
+    height: 23px;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translate(0, -50%);
+}
+
+.header .inner .util li img {
+    height: 28px;
+    object-fit: cover;
+}
+
+/* main_visual */
+
+.swiper {
+    height: 720px;
+    position: relative;
+}
+
+.swiper .swiper-wrapper .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.swiper .swiper-wrapper .swiper-slide .text {
+    width: 1440px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.swiper .swiper-wrapper .swiper-slide .text h2 {
+    font-family: 'Paperlogy 8';
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 38px;
+}
+
+.swiper .swiper-wrapper .swiper-slide .text p {
+    font-size: 17px;
+    font-family: 'Pretendard';
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.swiper .swiper-wrapper .swiper-slide .text b {
+    font-size: 17px;
+    font-family: 'Pretendard';
+    font-weight: 700;
+}
+
+.swiper .swiper-wrapper .swiper-slide .text a {
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: block;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.swiper .swiper-wrapper .swiper-slide .text a:hover {
+    background-color: white;
+    color: #2f386c;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color:rgba(0, 0, 0, 0.5) !important;
+}/* 슬라이드 양옆 화살표 */
+
+/* section02 */
+.section02 {
+    width: 1440px;
+    margin: 75px auto;
+}
+
+.section02 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.section02 ul li .img_container {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: relative;
+    /* overflow: hidden;  */
+}
+
+.section02 ul li .img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.section02 ul li .img_container .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 17px;
+    background-color: #5863acba;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    border-radius: 50%;
+}
+
+.section02 ul li .img_container:hover .overlay {
+    opacity: 1;
+}
+
+.section02 ul li:first-child {
+    width: 55px;
+    height: 55px;
+    background-color: #c9caca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section02 ul li:first-child img {
+    width: 22px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.section02 ul li:last-child {
+    width: 55px;
+    height: 55px;
+    background-color: #c9caca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section02 ul li:last-child img {
+    width: 22px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* section03 */
+.section03 {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.section03 .intro {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section03 .intro img {
+    height: 600px;
+}
+
+.section03 .intro .text h2 {
+    font-size: 50px;
+    font-family: 'Paperlogy 8';
+    font-weight: bold;
+    color: #2f386c;
+    margin-bottom: 30px;
+}
+
+.section03 .intro .text p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.section03 .intro .text b {
+    font-size: 17px;
+    font-family: 'Pretendard';
+    font-weight: 700;
+}
+
+.section03 .intro .text a {
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: block;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.section03 .intro .text a:hover {
+    background-color: #5863ac;
+    border: none;
+    color: white;
+
+
+}
+
+/* section04 */
+.section04 {
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+.section04 img {
+    width: 100%;
+    height: 425px;
+    object-fit: cover;
+}
+
+.section04 .item {
+    width: 1440px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section04 .item li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section04 .item li img {
+    width: auto;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
+
+.section04 .item li p {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Pretendard';
+    font-weight: 700;
+}
+
+/* section05 */
+.section05 {
+    width: 1440px;
+    margin: 150px auto;
+}
+
+.section05 .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.section05 .top .title h2 {
+    font-size: 35px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #2f386c;
+}
+
+.section05 .top .title p {
+    font-size: 25px;
+    font-family: 'Pretendard';
+    font-weight: 300;
+}
+
+.section05 .top .viewmore {
+    height: 20px;
+    display: flex;
+    align-items: last baseline;
+    gap: 5px;
+}
+
+.section05 .top .viewmore p {
+    font-size: 25px;
+}
+
+.section05 .top .viewmore img {
+    width: 20px;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.section05 .top .viewmore:hover img {
+    transform: rotate(360deg);
+}
+
+.section05 .item_wrap {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section05 .item_wrap .item {
+    width: 465px;
+    position: relative;
+}
+
+.section05 .item_wrap .item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.section05 .item_wrap .item .text {
+    margin-top: 20px;
+}
+
+.section05 .item_wrap .item .text h3 {
+    font-size: 25px;
+    font-family: 'Paperlogy 8';
+    font-weight: bold;
+    color: #2f386c;
+}
+
+.section05 .item_wrap .item .text p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.section05 .item_wrap .item .text .tag {
+    display: flex;
+    gap: 20px;
+}
+
+.section05 .item_wrap .item .text .tag li {
+    font-size: 17px;
+    font-family: 'Pretendard';
+    font-weight: 700;
+    color: #2f386c;
+}
+
+.section05 .item_wrap .item .button {
+    position: absolute;
+    bottom: 150px;
+    right: 20px;
+
+    display: flex;
+    gap: 5px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.section05 .item_wrap .item .button p {
+    width: 40px;
+    height: 40px;
+}
+
+.section05 .item_wrap .item .button p img {
+    width: 100%;
+    height: 100%;
+}
+
+.section05 .item_wrap .item:hover .button {
+    opacity: 1;
+}
+
+/* section06  */
+
+.section06 {
+    width: 1440px;
+    margin: 150px auto;
+}
+
+.section06 .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.section06 .top .title h2 {
+    font-size: 35px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #2f386c;
+}
+
+.section06 .top .title p {
+    font-size: 25px;
+    font-family: 'Pretendard';
+    font-weight: 300;
+}
+
+.section06 .top .viewmore {
+    height: 20px;
+    display: flex;
+    align-items: last baseline;
+    gap: 5px;
+}
+
+.section06 .top .viewmore p {
+    font-size: 25px;
+}
+
+.section06 .top .viewmore img {
+    width: 20px;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.section06 .top .viewmore:hover img {
+    transform: rotate(360deg);
+}
+
+.section06 .item_wrap {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section06 .item_wrap .item {
+    width: 465px;
+    position: relative;
+}
+
+.section06 .item_wrap .item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.section06 .item_wrap .item .text {
+    margin-top: 20px;
+}
+
+.section06 .item_wrap .item .text h3 {
+    font-size: 25px;
+    font-family: 'Paperlogy 8';
+    font-weight: bold;
+    color: #2f386c;
+}
+
+.section06 .item_wrap .item .text p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.section06 .item_wrap .item .text .tag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section06 .item_wrap .item .text .tag li {
+    font-size: 17px;
+    font-family: 'Pretendard';
+    font-weight: 700;
+    color: #2f386c;
+}
+
+.section06 .item_wrap .item .button {
+    position: absolute;
+    bottom: 190px;
+    right: 20px;
+
+    display: flex;
+    gap: 5px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.section06 .item_wrap .item .button p {
+    width: 40px;
+    height: 40px;
+}
+
+.section06 .item_wrap .item .button p img {
+    width: 100%;
+    height: 100%;
+}
+
+.section06 .item_wrap .item:hover .button {
+    opacity: 1;
+}
+
+/* section07 */
+
+.section07 {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.section07 img {
+    width: 955px;
+    height: 955px;
+    object-fit: cover;
+}
+.section07 .side{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.section07 .side .img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.section07 .side .img li {
+    width: 220px;
+    height: 220px;
+    position: relative;
+}
+
+.section07 .side .img li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.section07 .side .img li .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    color: white;
+    background-color: #5863acc5;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.section07 .side .img li .overlay p{
+    font-size: 50px;
+}
+.section07 .side .img li:hover .overlay{
+    opacity: 1;
+}
+.section07 .side .text h2 {
+    font-size: 35px;
+    font-family: 'Paperlogy 8';
+    font-weight: bold;
+    color: #2f386c;
+}
+.section07 .side .text p{
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+/* side_button */
+.side-buttons{
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+.side-buttons .side-btn{
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #5863ac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.side-buttons .side-btn img{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.side-buttons .side-btn:hover{
+    background-color: #5863ac;
+}
+
+.side-buttons .side-btn:hover img{
+    filter: brightness(0) invert(1);
+}
+
+/* footer */
+.footer{
+    background-color: #2f386c;
+    margin-top: 140px;
+    color: white;
+}
+.footer .inner{
+    width: 1440px;
+    padding: 65px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.footer .inner .left{
+    width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.footer .inner .left .logo img{
+    height: 40px;
+    object-fit: cover;
+    }
+
+.footer .inner .left .logo ul{
+    display: flex;
+    margin-top: 20px;
+}
+.footer .inner .left .logo ul li{
+    border-right: 1px solid white;
+    padding: 0 10px;
+}
+
+.footer .inner .left .logo ul li:first-child{
+    border-left: 1px solid white;
+}
+
+.footer .inner .left .text{
+    line-height: 23px;
+}
+
+.footer .inner .right{
+    width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.footer .inner .right img{
+    width: 280px;
+    height: auto;
+}
+
+.footer .inner .right .fin{
+    margin-top: 20px;
+    text-align: right;
+}
+
+.footer .inner .right .fin p{
+    font-size: 35px;
+    font-family: 'Paperlogy 8';
+    font-weight: bold;
+}
+
+.footer .inner .right .fin h2{
+    font-size: 50px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.footer .inner .right .fin span{
+    font-size: 18px;
+}

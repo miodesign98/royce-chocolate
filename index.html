@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>royce chocolate renewal</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script> /* 슬라이드 */
+        window.onload = () => {
+            var swiper = new Swiper(".main_visual", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 4500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const buttons = document.querySelectorAll(".item_wrap .item .button p img");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    let currentSrc = this.getAttribute("src");
+
+                    if (currentSrc.includes("_button.png")) {
+                        this.setAttribute("src", currentSrc.replace("_button.png", "_button_active.png"));
+                    }
+
+                    else if (currentSrc.includes("_button_active.png")) {
+                        this.setAttribute("src", currentSrc.replace("_button_active.png", "_button.png"));
+                    }
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header class="header">
+            <div class="inner">
+                <nav class="nav">
+                    <h1 class="logo">
+                        <a href="#"><img src="img/logo_White.png" alt="logo"></a>
+                    </h1>
+                    <ul class="gnb">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">LOCATION</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="util">
+                    <li class="search">
+                        <input type="text">
+                        <img src="img/search.png" alt="search">
+                    </li><!-- search end -->
+                    <li><a href="#"><img src="img/login.png" alt="login"></a></li>
+                    <li><a href="#"><img src="img/shopping_cart.png" alt="cart"></a></li>
+                    <li><a href="#"><img src="img/mypage.png" alt="mypage"></a></li>
+                </ul>
+            </div><!-- inner end -->
+        </header><!-- header end -->
+
+        <main class="main">
+            <!-- Swiper -->
+            <div class="swiper main_visual">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="img/메인배너.jpg" alt="mainbanner">
+                        <div class="text">
+                            <h2>정교한 기술과 최고급 원료의 만남,<br>완벽한 초콜릿의 탄생.</h2>
+                            <p>
+                                오직 완벽함을 위한 집념, 그리고 세심한 장인의 손길.<br>
+                                로이스 초콜릿은 홋카이도의 신선한 자연이 선사한 최고급 원료와<br>
+                                정밀한 기술이 결합된 섬세한 제작 과정을 통해 탄생합니다.
+                            </p>
+                            <p>한 조각을 입에 넣는 순간, 부드럽게 녹아내리며 깊은 풍미가 퍼지는<br>
+                                특별한 경험. 초콜릿 본연의 순수한 맛을 극대화한 로이스만의<br>
+                                정교한 균형과 감각적인 미식의 세계를 선사합니다.
+                            </p>
+                            <b>진정한 프리미엄 초콜릿, 그 완벽함을 지금 만나보세요.</b>
+                            <a href="#">View More</a>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/메인배너2.jpg" alt="mainbanner">
+                        <div class="text">
+                            <h2>정교한 기술과 최고급 원료의 만남,<br>완벽한 초콜릿의 탄생.</h2>
+                            <p>
+                                오직 완벽함을 위한 집념, 그리고 세심한 장인의 손길.<br>
+                                로이스 초콜릿은 홋카이도의 신선한 자연이 선사한 최고급 원료와<br>
+                                정밀한 기술이 결합된 섬세한 제작 과정을 통해 탄생합니다.
+                            </p>
+                            <p>한 조각을 입에 넣는 순간, 부드럽게 녹아내리며 깊은 풍미가 퍼지는<br>
+                                특별한 경험. 초콜릿 본연의 순수한 맛을 극대화한 로이스만의<br>
+                                정교한 균형과 감각적인 미식의 세계를 선사합니다.
+                            </p>
+                            <b>진정한 프리미엄 초콜릿, 그 완벽함을 지금 만나보세요.</b>
+                            <a href="#">View More</a>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/메인배너4.jpg" alt="mainbanner">
+                        <div class="text">
+                            <h2>정교한 기술과 최고급 원료의 만남,<br>완벽한 초콜릿의 탄생.</h2>
+                            <p>
+                                오직 완벽함을 위한 집념, 그리고 세심한 장인의 손길.<br>
+                                로이스 초콜릿은 홋카이도의 신선한 자연이 선사한 최고급 원료와<br>
+                                정밀한 기술이 결합된 섬세한 제작 과정을 통해 탄생합니다.
+                            </p>
+                            <p>한 조각을 입에 넣는 순간, 부드럽게 녹아내리며 깊은 풍미가 퍼지는<br>
+                                특별한 경험. 초콜릿 본연의 순수한 맛을 극대화한 로이스만의<br>
+                                정교한 균형과 감각적인 미식의 세계를 선사합니다.
+                            </p>
+                            <b>진정한 프리미엄 초콜릿, 그 완벽함을 지금 만나보세요.</b>
+                            <a href="#">View More</a>
+                        </div><!-- text end -->
+                    </div><!-- swiper-slide end -->
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div><!-- main_visual end -->
+
+            <section class="section02">
+                <ul>
+                    <li><img src="img/전체제품_왼쪽버튼.png" alt="left"></li>
+                    <li>
+                        <div class="img_container">
+                            <a href="#"><img src="img/전체1.jpg" alt=""></a>
+                            <div class="overlay">
+                                <p>CHOCOLAT<br>NO SHIKI<br>HOKKAIDO</p>
+                            </div><!-- overlay end -->
+                        </div><!-- img_container end -->
+                    </li>
+                    <li>
+                        <div class="img_container">
+                            <a href="#"><img src="img/전체2.jpg" alt=""></a>
+                            <div class="overlay">
+                                <p>Prestige<br>NO SHIKI<br>HOKKAIDO</p>
+                            </div><!-- overlay end -->
+                        </div><!-- img_container end -->
+                    </li>
+                    <li>
+                        <div class="img_container">
+                            <a href="#"><img src="img/전체3.jpg" alt=""></a>
+                            <div class="overlay">
+                                <p>CHOCOLAT<br>Nama Chocolate<br>Collection</p>
+                            </div><!-- overlay end -->
+                        </div><!-- img_container end -->
+                    </li>
+                    <li>
+                        <div class="img_container">
+                            <a href="#"><img src="img/전체4.jpg" alt=""></a>
+                            <div class="overlay">
+                                <p>ROYCE’<br>Variety<br>Assortment</p>
+                            </div><!-- overlay end -->
+                        </div><!-- img_container end -->
+                    </li>
+                    <li>
+                        <div class="img_container">
+                            <a href="#"><img src="img/전체5.jpg" alt=""></a>
+                            <div class="overlay">
+                                <p>Mystery<br>Box</p>
+                            </div><!-- overlay end -->
+                        </div><!-- img_container end -->
+                    </li>
+                    <li>
+                        <div class="img_container">
+                            <a href="#"><img src="img/전체6.jpg" alt=""></a>
+                            <div class="overlay">
+                                <p>ROYCE’<br>Tasting<br>Box</p>
+                            </div><!-- overlay end -->
+                        </div><!-- img_container end -->
+                    </li>
+                    <li><img src="img/전체제품_오른쪽버튼.png" alt="right"></li>
+                </ul>
+            </section><!-- section02 end -->
+
+            <section class="section03">
+                <div class="intro">
+                    <img src="img/초코.png" alt="">
+                    <div class="text">
+                        <h2>한 조각에 담긴 <br> 완벽한 미식 경험</h2>
+                        <p>홋카이도의 청정 자연에서 탄생한 로이스 초콜릿(ROYCE’)은 최고급 원료와 정밀한 기술이 결합된 <br>
+                            프리미엄 초콜릿 브랜드입니다. 1983년 일본 홋카이도에서 시작된 로이스는 깊고 풍부한 맛, <br>
+                            부드러운 식감, 그리고 혁신적인 제품 개발을 통해 전 세계 초콜릿 애호가들에게 사랑받고 있습니다.<br>
+                            로이스 초콜릿은 신선한 홋카이도산 유제품과 엄선된 카카오 원두를 사용하여, 단순한 디저트를 넘어 <br>
+                            궁극의 미식 경험을 제공합니다.
+                        </p>
+                        <b>로이스는 단순한 초콜릿 브랜드를 넘어, 완벽한 조화를 추구하는 장인정신과 <br>
+                            혁신적인 감각을 바탕으로 새로운 미식 경험을 창조합니다. 절제된 디자인, 정제된 맛, 그리고 깊이 있는 풍미를 통해,<br>
+                            로이스 초콜릿은 전 세계 미식가들에게 특별한 순간을 선사하는 브랜드로 자리 잡고 있습니다.
+                        </b>
+                        <a href="#">VIEW MORE</a>
+                    </div><!-- text end -->
+                </div><!-- intro end -->
+            </section><!-- section03 end -->
+
+            <section class="section04">
+                <img src="img/서비스_특징.jpg" alt="">
+                <ul class="item">
+                    <li>
+                        <img src="img/dilivery.png" alt="">
+                        <p>수요일, 목요일, 금요일에 한해 <br>
+                            무료 표준 배송을 제공합니다. <br>
+                            (이용 약관 적용)</p>
+                    </li>
+                    <li>
+                        <img src="img/ice.png" alt="">
+                        <p>초콜릿은 드라이아이스가<br>
+                            포함된 박스에 담겨 배송됩니다</p>
+                    </li>
+                    <li>
+                        <img src="img/store.png" alt="">
+                        <p>일부 매장에서 당일 배송 및<br>
+                            픽업 서비스를 제공합니다</p>
+                    </li>
+                    <li>
+                        <img src="img/security.png" alt="">
+                        <p>100% 안전하고 보안이 강화된 결제,<br>
+                            걱정 없는 구매 경험 제공</p>
+                    </li>
+                </ul>
+            </section><!-- section04 -->
+
+            <section class="section05">
+                <div class="top">
+                <div class="title">
+                    <h2>ROYCE' Best Item</h2>
+                    <p>가장 사랑받는 로이스 제품</p>
+                </div><!-- title end -->
+                <div class="viewmore">
+                    <p>View More</p>
+                    <img src="img/플러스.png" alt="">
+                </div><!-- viewmore end -->
+            </div><!-- top end -->
+
+                <div class="item_wrap">
+                    <div class="item">
+                        <img src="img/베스트1.png" alt="">
+                        <div class="text">
+                            <h3>로이스 프레스티지 나마 초콜릿 컬렉션</h3>
+                            <p>입안에서 부드럽게 녹아내리는 촉촉한 식감과 깊은 초콜릿 풍미,<br>신선한 홋카이도산 생크림과 엄선된 카카오로 완성된 프리미엄 초콜릿</p>
+                            <ul class="tag">
+                                <li>#부드러운 식감</li>
+                                <li>#깊은 풍미</li>
+                                <li>#프리미엄 원료</li>
+                            </ul>
+                        </div><!-- text end -->
+                        <div class="button">
+                            <p><img src="img/like_button.png" alt=""></p>
+                            <p><img src="img/cart_button.png" alt=""></p>
+                        </div><!-- button end -->
+                    </div><!-- item end -->
+
+                    <div class="item">
+                        <img src="img/베스트2.png" alt="">
+                        <div class="text">
+                            <h3>ROYCE’ Luxe Collection</h3>
+                            <p>정교한 기술과 감각적인 디자인이 결합된 프리미엄 초콜릿 컬렉션.<br>
+                                독창적인 조합과 세련된 맛으로 특별한 미식 경험을 선사합니다.</p>
+                                <ul class="tag">
+                                    <li>#럭셔리 초콜릿</li>
+                                    <li>#감각적인 디자인</li>
+                                    <li>#독창적인 조합</li>
+                                </ul>
+                        </div><!-- text end -->
+                        <div class="button">
+                            <p><img src="img/like_button.png" alt=""></p>
+                            <p><img src="img/cart_button.png" alt=""></p>
+                        </div><!-- button end -->
+                    </div><!-- item end -->
+
+                    <div class="item">
+                        <img src="img/베스트3.png" alt="">
+                        <div class="text">
+                            <h3>ROYCE’ Tasting Box</h3>
+                            <p>다양한 초콜릿을 한 번에 즐길 수 있는 ROYCE’ Tasting Box. <br>
+                                한 입마다 새로운 초콜릿의 세계를 경험할 수 있습니다.</p>
+                                <ul class="tag">
+                                    <li>#다양한 초콜릿 조합</li>
+                                    <li>#맛과 질감의 조화</li>
+                                    <li>#테이스팅 컬렉션</li>
+                                </ul>
+                        </div><!-- text end -->
+                        <div class="button">
+                            <p><img src="img/like_button.png" alt=""></p>
+                            <p><img src="img/cart_button.png" alt=""></p>
+                        </div><!-- button end -->
+                    </div><!-- item end -->
+                </div><!-- item_wrap end -->
+            </section><!-- section05 end -->
+
+            <section class="section06">
+                <div class="top">
+                <div class="title">
+                    <h2>ROYCE' Seasonal Specials</h2>
+                    <p>로이스 시즌스페셜 컬렉션</p>
+                </div><!-- title end -->
+                <div class="viewmore">
+                    <p>View More</p>
+                    <img src="img/플러스.png" alt="">
+                </div><!-- viewmore end -->
+            </div><!-- top end -->
+
+                <div class="item_wrap">
+                    <div class="item">
+                        <img src="img/시즌1.png" alt="">
+                        <div class="text">
+                            <h3>이시가키지마 나마 초콜릿</h3>
+                            <p>이시가키지마산 천연 소금을 더해 깊고 섬세한 단맛과 감칠맛이 <br>
+                                조화를 이루는 나마 초콜릿. 부드럽게 녹아내리는 촉촉한 식감과 <br>
+                                독특한 풍미를 선사합니다</p>
+                                <ul class="tag">
+                                    <li>#섬세한 단맛과 감칠맛 조화</li>
+                                    <li>#고급 나마 초콜릿</li>
+                                    <li>#프리미엄 초콜릿</li>
+                                </ul>
+                        </div><!-- text end -->
+                        <div class="button">
+                            <p><img src="img/like_button.png" alt=""></p>
+                            <p><img src="img/cart_button.png" alt=""></p>
+                        </div><!-- button end -->
+                    </div><!-- item end -->
+
+                    <div class="item">
+                        <img src="img/시즌2.png" alt="">
+                        <div class="text">
+                            <h3>이시가키지마 포테이토칩 초콜릿</h3>
+                            <p>이시가키지마산 천연 소금이 더해진 바삭한 감자칩과 달콤한 초콜릿의<br>
+                                완벽한 균형. 바삭하면서도 부드러운 달콤 짭짤한 맛이<br>
+                                색다른 즐거움을 제공합니다.</p>
+                                <ul class="tag">
+                                    <li>#달콤 짭짤한 맛의 조화</li>
+                                    <li>#색다른 식감과 풍미</li>
+                                    <li>#독창적인 초콜릿 스낵</li>
+                                </ul>
+                        </div><!-- text end -->
+                        <div class="button">
+                            <p><img src="img/like_button.png" alt=""></p>
+                            <p><img src="img/cart_button.png" alt=""></p>
+                        </div><!-- button end -->
+                    </div><!-- item end -->
+
+                    <div class="item">
+                        <img src="img/시즌3.jpg" alt="">
+                        <div class="text">
+                            <h3>이시가키지마 흑설탕 바 초콜릿</h3>
+                            <p>이시가키지마산 흑설탕을 사용해 깊고 진한 풍미를 담은 바 초콜릿. <br>
+                                풍부한 단맛과 부드러운 질감이 특징이며, 전통적인 일본의 단맛을 <br>
+                                현대적인 방식으로 재해석했습니다.</p>
+                                <ul class="tag">
+                                    <li>#일본 전통 단맛 재해석</li>
+                                    <li>#부드러운 바 초콜릿</li>
+                                    <li>#깊고 진한 달콤함</li>
+                                </ul>
+                        </div><!-- text end -->
+                        <div class="button">
+                            <p><img src="img/like_button.png" alt=""></p>
+                            <p><img src="img/cart_button.png" alt=""></p>
+                        </div><!-- button end -->
+                    </div><!-- item end -->
+                </div><!-- item_wrap end -->
+            </section><!-- section06 end -->
+
+            <section class="section07">
+                <img src="img/인스타1.jpg" alt="">
+                <div class="side">
+                    <ul class="img">
+                        <li>
+                            <a href="#"><img src="img/인스타2.jpg" alt=""></a>
+                            <div class="overlay">
+                                <p>+</p>
+                            </div><!-- overlay end -->
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/인스타3.jpg" alt=""></a>
+                            <div class="overlay">
+                                <p>+</p>
+                            </div><!-- overlay end -->
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/인스타4.jpg" alt=""></a>
+                            <div class="overlay">
+                                <p>+</p>
+                            </div><!-- overlay end -->
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/인스타5.jpg" alt=""></a>
+                            <div class="overlay">
+                                <p>+</p>
+                            </div><!-- overlay end -->
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/인스타6.jpg" alt=""></a>
+                            <div class="overlay">
+                                <p>+</p>
+                            </div><!-- overlay end -->
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/인스타7.jpg" alt=""></a>
+                            <div class="overlay">
+                                <p>+</p>
+                            </div><!-- overlay end -->
+                        </li>
+                    </ul>
+                    <div class="text">
+                        <h2>새로운 계절, 새로운 맛. <br>
+                            로이스 초콜릿의 특별한 제안.</h2>
+                            <p>계절이 바뀔 때마다 찾아오는 특별한 순간.<br>
+                                신선한 원료와 정교한 레시피로 완성된 로이스 초콜릿이<br>
+                                이번 시즌만의 감각적인 풍미를 선사합니다.<br>
+                                한 입마다 느껴지는 깊고 섬세한 맛을 지금 만나보세요.</p>
+                    </div><!-- text end -->
+                </div><!-- side end -->
+            </section><!-- section07 end -->
+
+            </section><!-- main_visual end -->
+        </main><!-- main end -->
+
+        <div class="side-buttons">
+            <a href="#" class="side-btn">
+                <img src="img/icon_person.svg" alt="프로필">
+            </a>
+            <a href="#" class="side-btn">
+                <img src="img/icon_shoppingcart.svg" alt="장바구니">
+            </a>
+            <a href="#" class="side-btn">
+                <img src="img/icon_support.svg" alt="홈">
+            </a>
+        </div><!-- side button -->
+
+        <footer class="footer">
+            <div class="inner">
+                <div class="left">
+                    <div class="logo">
+                        <img src="img/logo_White.png" alt="">
+                        <ul>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">입점/제휴안내</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">이용안내</a></li>
+                        </ul>
+                    </div><!-- logo end -->
+                    <div class="text">
+                        <p>(주)비에스케이코퍼레이션   |   대표이사  :  오미경,나상도   |   대표전화 080-123-4567   |   팩스 02-123-4567 <br>
+                            이메일  :  info@godiva.kr   ㅣ   주소  :  서울특별시 강남구 학동로 401(청담동) 금하빌딩 13층<br>
+                            사업자등록번호 116-81-62784 [사업자정보확인]   ㅣ   통신판매업신고번호 제 2010-서울강남-02017호   </p>
+                    </div><!-- text end -->
+                </div><!-- left end -->
+                <div class="right">
+                    <img src="img/sns.png" alt="">
+                    <div class="fin">
+                        <p>로이스 고객만족센터</p>
+                        <h2>080-123-4567</h2>
+                        <span>상담시간 오전 9시 - 오후 5시   /   토.일.공휴일 휴무</span>
+                    </div><!-- fin end  -->
+                </div><!-- right end -->
+            </div><!-- inner end -->
+        </footer><!-- footer end -->
+
+    </div><!-- wrap end -->
+</body>
+
+</html>
